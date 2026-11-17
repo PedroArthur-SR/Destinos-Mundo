@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Meus Favoritos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h1>Meus Favoritos</h1>
+    <div class="row" id="favoritos-grid"></div>
+</div>
+
+<script>
+const API_URL = "http://localhost:3001";
+
+const usuario = JSON.parse(
+    sessionStorage.getItem("usuarioCorrente")
+);
+
+if (!usuario) {
+    window.location.href =
+"login.html";
+}
+
+async function carregarFavoritos() {
+
+    const favoritos =
+        JSON.parse(
+            localStorage.getItem(
+                `favoritos_${usuario.id}`
+            )
+        ) || [];
+
+    const response =
+        await fetch(`${API_URL}/destinos`);
+
+    const destinos = await response.json();
+
+    const filtrados = destinos.filter(d =>
+    favoritos.includes(String(d.id))
+);
+
+    const grid =
+        document.getElementById("favoritos-grid");
+
+    filtrados.forEach(destino => {
+
+        grid.innerHTML += `
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="${destino.imagem}"
+                     class="card-img-top">
+
+                <div class="card-body">
+                    <h5>${destino.titulo}</h5>
+                    <a href="details.html?id=${destino.id}"
+                       class="btn btn-dark">
+                       Ver detalhes
+                    </a>
+                </div>
+            </div>
+        </div>`;
+    });
+}
+
+carregarFavoritos();
+</script>
+
+</body>
+</html>

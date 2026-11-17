@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Visualização de Dados – Destinos Mundo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  
+</head>
+<body>
+  <div id="loading-overlay">
+    <div class="spinner-border text-dark mb-3" role="status"></div>
+    <p class="text-muted">Carregando dados…</p>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Destinos Mundo</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#todos-destinos">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro_destino.html">Cadastrar</a></li>
+            <li class="nav-item"><a class="nav-link active" href="visualizacao.html">Visualização</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#sobre-aluno">Sobre</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4 mb-5">
+
+    <div class="d-flex align-items-center mb-1">
+      <h2 class="mb-0 me-3">Visualização de Dados</h2>
+    </div>
+    <p class="text-muted mb-4">Análise visual dos destinos cadastrados no catálogo.</p>
+    <div id="error-msg" class="alert alert-danger">
+      Não foi possível carregar os dados. Verifique se o JSON Server está rodando na porta 3001.
+    </div>
+    <div class="row" id="kpi-row">
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-value" id="kpi-total">–</div>
+          <div class="stat-label">Destinos</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-value" id="kpi-categorias">–</div>
+          <div class="stat-label">Países</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-value" id="kpi-avaliacao">–</div>
+          <div class="stat-label">Avaliação Média</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-value" id="kpi-preco">–</div>
+          <div class="stat-label">Atrações</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="chart-card">
+          <h5>Mapa Interativo dos Destinos</h5>
+          <p class="text-muted">Marcadores com os principais lugares turísticos cadastrados.</p>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="chart-card">
+          <h5>Destinos por Região</h5>
+          <p class="text-muted">Distribuição percentual dos destinos por continente / região.</p>
+          <canvas id="chartPizza"></canvas>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="chart-card">
+          <h5>Pontos Turísticos por País</h5>
+          <p class="text-muted">Quantidade de destinos cadastrados em cada país.</p>
+          <canvas id="chartPaises"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="chart-card">
+          <h5>Atrações Cadastradas por País</h5>
+          <p class="text-muted">Total de atrações detalhadas dentro dos destinos de cada país.</p>
+          <canvas id="chartAtracoesPais"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>2026 © Destinos Mundo</p>
+  </footer>
+
+  <script src="assets/js/visualizacao.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
+  
+</body>
+</html>

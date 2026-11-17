@@ -1,0 +1,663 @@
+{
+  "destinos": [
+    {
+      "id": "1",
+      "titulo": "Machu Picchu",
+      "descricaoCurta": "Cidade inca nas alturas dos Andes peruanos, patrimônio da UNESCO.",
+      "descricaoCompleta": "Machu Picchu é uma das maravilhas do mundo moderno, erguida no século XV pelos incas a 2.430 metros de altitude. A cidade perdida revela uma arquitetura impressionante com terraços, templos e observatórios astronômicos. Descoberta pelo mundo ocidental em 1911 por Hiram Bingham, a cidadela continua a impressionar milhões de visitantes por ano com sua engenharia e mistério.",
+      "imagem": "assets/img/machu/machu1.jpg",
+      "categoria": "América do Sul",
+      "pais": "Peru",
+      "melhorEpoca": "Maio a Outubro",
+      "preco": 580,
+      "avaliacao": 4.9,
+      "destaque": true,
+      "tags": [
+        "patrimônio UNESCO",
+        "incas",
+        "montanha",
+        "arqueologia",
+        "aventura"
+      ],
+      "atracoes": [
+        {
+          "nome": "Portão do Sol",
+          "descricao": "Vista panorâmica da cidade inca.",
+          "imagem": "assets/img/machu/machu2.jpg"
+        },
+        {
+          "nome": "Templo do Sol",
+          "descricao": "Construção sagrada alinhada com o solstício.",
+          "imagem": "assets/img/machu/machu3.jpg"
+        },
+        {
+          "nome": "Montanha Huayna Picchu",
+          "descricao": "Pico com vista privilegiada da cidadela.",
+          "imagem": "assets/img/machu/machu4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Santorini",
+      "descricaoCurta": "Ilha grega de casas brancas e cúpulas azuis sobre o Mar Egeu.",
+      "descricaoCompleta": "Santorini encanta com pôres do sol em Oia, praias de areia vulcânica negra e vinhedos que produzem vinhos únicos. Formada por uma erupção vulcânica catastrófica há 3.600 anos, a ilha guarda uma das cenas mais fotografadas do mundo: as casas caiadas de branco com cúpulas azuis sobre o mar. Uma experiência mediterrânea inesquecível para qualquer viajante.",
+      "imagem": "assets/img/santorini/santorini1.jpg",
+      "categoria": "Europa",
+      "pais": "Grécia",
+      "melhorEpoca": "Junho a Setembro",
+      "preco": 950,
+      "avaliacao": 4.8,
+      "destaque": true,
+      "tags": [
+        "praia",
+        "ilha",
+        "romantico",
+        "gastronomia",
+        "pôr do sol"
+      ],
+      "atracoes": [
+        {
+          "nome": "Oia",
+          "descricao": "Vila famosa pelo pôr do sol mais belo da Europa.",
+          "imagem": "assets/img/santorini/santorini2.jpg"
+        },
+        {
+          "nome": "Praia de Perissa",
+          "descricao": "Praia de areia vulcânica negra única no mundo.",
+          "imagem": "assets/img/santorini/santorini3.jpg"
+        },
+        {
+          "nome": "Akrotiri",
+          "descricao": "Sítio arqueológico da civilização minoana.",
+          "imagem": "assets/img/santorini/santorini4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "Kyoto",
+      "descricaoCurta": "Antiga capital japonesa, lar de templos milenares e tradições.",
+      "descricaoCompleta": "Kyoto guarda mais de 1.600 templos budistas e santuários xintoístas. A cidade encanta com a cerimônia do chá, as gueixas do bairro de Gion e o espetáculo das cerejeiras na primavera. Capital imperial do Japão por mais de mil anos, Kyoto é um portal vivo para a história e cultura japonesa, com festivais tradicionais ao longo de todo o ano.",
+      "imagem": "assets/img/kyoto/kyoto1.jpg",
+      "categoria": "Ásia",
+      "pais": "Japão",
+      "melhorEpoca": "Março a Maio",
+      "preco": 1200,
+      "avaliacao": 4.9,
+      "destaque": true,
+      "tags": [
+        "cultura",
+        "templos",
+        "cerejeiras",
+        "tradição",
+        "gastronomia"
+      ],
+      "atracoes": [
+        {
+          "nome": "Fushimi Inari",
+          "descricao": "Túnel de milhares de torii vermelhos na montanha.",
+          "imagem": "assets/img/kyoto/kyoto2.jpg"
+        },
+        {
+          "nome": "Kinkaku-ji",
+          "descricao": "O Pavilhão Dourado refletido em lago sereno.",
+          "imagem": "assets/img/kyoto/kyoto3.jpg"
+        },
+        {
+          "nome": "Arashiyama",
+          "descricao": "Bosque de bambus e templos às margens do rio.",
+          "imagem": "assets/img/kyoto/kyoto4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Patagônia",
+      "descricaoCurta": "Fim do mundo com glaciares, montanhas e natureza selvagem.",
+      "descricaoCompleta": "A Patagônia oferece cenários incríveis entre Argentina e Chile. Torres del Paine, o glaciar Perito Moreno e a cidade de Ushuaia são destinos perfeitos para aventureiros e amantes da natureza. A região abriga uma das últimas fronteiras selvagens do planeta, com fauna única, ventos implacáveis e paisagens de tirar o fôlego.",
+      "imagem": "assets/img/patagonia/patagonia1.jpg",
+      "categoria": "América do Sul",
+      "pais": "Argentina / Chile",
+      "melhorEpoca": "Novembro a Março",
+      "preco": 720,
+      "avaliacao": 4.7,
+      "destaque": false,
+      "tags": [
+        "aventura",
+        "natureza",
+        "glaciares",
+        "trekking",
+        "vida selvagem"
+      ],
+      "atracoes": [
+        {
+          "nome": "Torres del Paine",
+          "descricao": "Torres de granito icônicas no parque chileno.",
+          "imagem": "assets/img/patagonia/patagonia2.jpg"
+        },
+        {
+          "nome": "Perito Moreno",
+          "descricao": "Glaciar em avanço com espetaculares quedas de gelo.",
+          "imagem": "assets/img/patagonia/patagonia3.jpg"
+        },
+        {
+          "nome": "Ushuaia",
+          "descricao": "A cidade mais austral do mundo.",
+          "imagem": "assets/img/patagonia/patagonia4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "titulo": "Marrakech",
+      "descricaoCurta": "Cidade marroquina de souks vibrantes e arquitetura árabe.",
+      "descricaoCompleta": "Marrakech seduz com a medina labiríntica, a animada Praça Jemaa el-Fna e palácios requintados. Os riads escondem jardins paradisíacos atrás de muros simples. A cidade vermelha, como é conhecida por suas construções de argila ocre, é um festival para os sentidos: aromas de especiarias, cores vibrantes dos tapetes e a música dos músicos de rua.",
+      "imagem": "assets/img/marrakech/marrakech1.jpg",
+      "categoria": "África",
+      "pais": "Marrocos",
+      "melhorEpoca": "Março a Maio",
+      "preco": 430,
+      "avaliacao": 4.6,
+      "destaque": false,
+      "tags": [
+        "cultura",
+        "mercados",
+        "arquitetura",
+        "gastronomia",
+        "história"
+      ],
+      "atracoes": [
+        {
+          "nome": "Jemaa el-Fna",
+          "descricao": "Praça central com encantadores de serpentes e músicos.",
+          "imagem": "assets/img/marrakech/marrakech2.jpg"
+        },
+        {
+          "nome": "Jardim Majorelle",
+          "descricao": "Jardim azul cobalto criado por Yves Saint Laurent.",
+          "imagem": "assets/img/marrakech/marrakech3.jpg"
+        },
+        {
+          "nome": "Medina",
+          "descricao": "Labirinto de souks e artesanato milenar.",
+          "imagem": "assets/img/marrakech/marrakech4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "titulo": "Islândia",
+      "descricaoCurta": "Terra de auroras boreais, geiseres e paisagens de outro mundo.",
+      "descricaoCompleta": "A Islândia é um laboratório geológico vivo com vulcões, geiseres e cachoeiras poderosas. No inverno as auroras boreais pintam o céu com tons de verde, roxo e azul. No verão o sol não se põe, permitindo explorar a natureza a qualquer hora. A Ring Road permite circundar toda a ilha em uma road trip épica.",
+      "imagem": "assets/img/islandia/islandia1.jpg",
+      "categoria": "Europa",
+      "pais": "Islândia",
+      "melhorEpoca": "Setembro a Março",
+      "preco": 1100,
+      "avaliacao": 4.8,
+      "destaque": false,
+      "tags": [
+        "aurora boreal",
+        "natureza",
+        "vulcões",
+        "road trip",
+        "aventura"
+      ],
+      "atracoes": [
+        {
+          "nome": "Aurora Boreal",
+          "descricao": "Fenômeno de luzes verdes no céu noturno.",
+          "imagem": "assets/img/islandia/islandia2.jpg"
+        },
+        {
+          "nome": "Geysir",
+          "descricao": "Geiser que deu nome a todos os geiseres do mundo.",
+          "imagem": "assets/img/islandia/islandia3.jpg"
+        },
+        {
+          "nome": "Lagoa Azul",
+          "descricao": "Spa geotérmico de águas turquesa e vapor natural.",
+          "imagem": "assets/img/islandia/islandia4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "titulo": "Bali",
+      "descricaoCurta": "Ilha dos deuses com templos, arrozais e praias paradisíacas.",
+      "descricaoCompleta": "Bali é uma ilha espiritual e sensorial da Indonésia. Templos hindus cobertos de musgo, terraços de arroz em degraus, dança tradicional Kecak ao pôr do sol e praias famosas como Kuta e Seminyak. Ubud, no coração da ilha, é o centro cultural com mercados de artesanato, yoga e culinária balinesa incomparável.",
+      "imagem": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
+      "categoria": "Ásia",
+      "pais": "Indonésia",
+      "melhorEpoca": "Abril a Outubro",
+      "preco": 650,
+      "avaliacao": 4.7,
+      "destaque": false,
+      "tags": [
+        "praia",
+        "espiritualidade",
+        "cultura",
+        "surf",
+        "yoga"
+      ],
+      "atracoes": [
+        {
+          "nome": "Ubud",
+          "descricao": "Centro cultural com arrozais e arte tradicional.",
+          "imagem": "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=600"
+        },
+        {
+          "nome": "Tanah Lot",
+          "descricao": "Templo icônico sobre rocha no oceano.",
+          "imagem": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600"
+        },
+        {
+          "nome": "Kuta Beach",
+          "descricao": "A praia mais famosa de Bali, ideal para surf.",
+          "imagem": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "titulo": "Petra",
+      "descricaoCurta": "Cidade de pedra esculpida pelos nabateus nas rochas da Jordânia.",
+      "descricaoCompleta": "Petra, a cidade rosa, foi esculpida diretamente na rocha pelo povo nabateu há mais de 2.000 anos. O Tesouro (Al-Khazneh) é o monumento mais icônico, revelado após uma caminhada pelo Siq, um desfiladeiro estreito e sinuoso. Com mais de 800 monumentos esculpidos, Petra é uma das maravilhas do mundo moderno e um dos sítios arqueológicos mais fascinantes do planeta.",
+      "imagem": "https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=800",
+      "categoria": "Oriente Médio",
+      "pais": "Jordânia",
+      "melhorEpoca": "Março a Maio",
+      "preco": 490,
+      "avaliacao": 4.9,
+      "destaque": true,
+      "tags": [
+        "arqueologia",
+        "patrimônio UNESCO",
+        "história",
+        "aventura",
+        "deserto"
+      ],
+      "atracoes": [
+        {
+          "nome": "Al-Khazneh",
+          "descricao": "O icônico Tesouro esculpido na rocha rosada.",
+          "imagem": "https://images.unsplash.com/photo-1548695636-e8d4d895fd3b?w=600"
+        },
+        {
+          "nome": "O Siq",
+          "descricao": "Desfiladeiro de 1,2 km que leva à cidade.",
+          "imagem": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600"
+        },
+        {
+          "nome": "Mosteiro Ad Deir",
+          "descricao": "Monumento ainda maior que o Tesouro, no alto da montanha.",
+          "imagem": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?w=600"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "titulo": "Amsterdã",
+      "descricaoCurta": "Capital holandesa de canais, bicicletas e museus de classe mundial.",
+      "descricaoCompleta": "Amsterdã é uma das cidades mais charmosas da Europa, com seus canais do século XVII, casas estreitas inclinadas e uma cultura liberal e acolhedora. O Museu Van Gogh, o Rijksmuseum e a Casa de Anne Frank são paradas obrigatórias. A cidade é também famosa pelo mercado de flores, pelos cafés aconchegantes e pela vida noturna animada.",
+      "imagem": "https://images.unsplash.com/photo-1534351590666-13e3e96b5702?w=800",
+      "categoria": "Europa",
+      "pais": "Holanda",
+      "melhorEpoca": "Abril a Agosto",
+      "preco": 870,
+      "avaliacao": 4.6,
+      "destaque": false,
+      "tags": [
+        "canais",
+        "museus",
+        "bicicleta",
+        "arte",
+        "história"
+      ],
+      "atracoes": [
+        {
+          "nome": "Rijksmuseum",
+          "descricao": "O maior museu de arte e história dos Países Baixos.",
+          "imagem": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
+        },
+        {
+          "nome": "Casa de Anne Frank",
+          "descricao": "Memorial histórico onde Anne Frank escreveu seu diário.",
+          "imagem": "https://images.unsplash.com/photo-1558642891-54be180ea339?w=600"
+        },
+        {
+          "nome": "Vondelpark",
+          "descricao": "O maior parque da cidade, ideal para passear de bicicleta.",
+          "imagem": "https://images.unsplash.com/photo-1576295169241-e921ca4fc7bc?w=600"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "titulo": "Grande Barreira de Coral",
+      "descricaoCurta": "O maior ecossistema de corais do mundo, na costa australiana.",
+      "descricaoCompleta": "A Grande Barreira de Coral é o maior sistema de recifes de coral do planeta, com mais de 2.300 km de extensão ao longo da costa de Queensland, na Austrália. Abriga mais de 1.500 espécies de peixes, tartarugas marinhas, golfinhos e tubarões. Visível até do espaço, a barreira é patrimônio natural da UNESCO e um destino imperdível para mergulhadores e amantes da natureza.",
+      "imagem": "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800",
+      "categoria": "Oceania",
+      "pais": "Austrália",
+      "melhorEpoca": "Junho a Outubro",
+      "preco": 1450,
+      "avaliacao": 4.8,
+      "destaque": false,
+      "tags": [
+        "mergulho",
+        "natureza",
+        "vida marinha",
+        "patrimônio UNESCO",
+        "snorkeling"
+      ],
+      "atracoes": [
+        {
+          "nome": "Ilha Whitsundays",
+          "descricao": "Arquipélago de 74 ilhas dentro da barreira.",
+          "imagem": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600"
+        },
+        {
+          "nome": "Cairns",
+          "descricao": "Principal porta de entrada para a barreira de coral.",
+          "imagem": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=600"
+        },
+        {
+          "nome": "Lady Elliot Island",
+          "descricao": "Ilha coralina no extremo sul da barreira, paraíso para raias.",
+          "imagem": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "titulo": "Rio de Janeiro",
+      "descricaoCurta": "A cidade maravilhosa com praias, Cristo Redentor e samba.",
+      "descricaoCompleta": "O Rio de Janeiro é uma das cidades mais belas do mundo, emoldurada por montanhas, florestas e o oceano Atlântico. O Cristo Redentor no Corcovado, o Pão de Açúcar, as praias de Copacabana e Ipanema e o Carnaval mais famoso do planeta fazem do Rio um destino único. A cidade vibra com música, dança e uma cultura única nascida da fusão de povos.",
+      "imagem": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800",
+      "categoria": "América do Sul",
+      "pais": "Brasil",
+      "melhorEpoca": "Dezembro a Março",
+      "preco": 350,
+      "avaliacao": 4.7,
+      "destaque": true,
+      "tags": [
+        "praia",
+        "carnaval",
+        "samba",
+        "natureza",
+        "cultura"
+      ],
+      "atracoes": [
+        {
+          "nome": "Cristo Redentor",
+          "descricao": "Estátua icônica com vista panorâmica da cidade.",
+          "imagem": "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?w=600"
+        },
+        {
+          "nome": "Copacabana",
+          "descricao": "A praia mais famosa do Brasil.",
+          "imagem": "https://images.unsplash.com/photo-1598977797866-2f0b3c4c4d8a?w=600"
+        },
+        {
+          "nome": "Pão de Açúcar",
+          "descricao": "Morro com bondinho e vista espetacular da baía.",
+          "imagem": "https://images.unsplash.com/photo-1544989513-6e809b11ea3e?w=600"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "titulo": "Safári no Serengeti",
+      "descricaoCurta": "A maior migração de animais do mundo nas savanas da Tanzânia.",
+      "descricaoCompleta": "O Parque Nacional do Serengeti, na Tanzânia, é o palco da Grande Migração: mais de 1,5 milhão de gnus, zebras e gazelas cruzam a savana em busca de pasto. Um safári pelo Serengeti é uma experiência transformadora, com avistamentos de Big Five (leão, leopardo, elefante, búfalo e rinoceronte) e pôres do sol inesquecíveis sobre as planícies.",
+      "imagem": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800",
+      "categoria": "África",
+      "pais": "Tanzânia",
+      "melhorEpoca": "Junho a Outubro",
+      "preco": 2800,
+      "avaliacao": 5,
+      "destaque": false,
+      "tags": [
+        "safári",
+        "vida selvagem",
+        "natureza",
+        "aventura",
+        "Big Five"
+      ],
+      "atracoes": [
+        {
+          "nome": "Grande Migração",
+          "descricao": "Espetáculo anual com mais de 1 milhão de animais.",
+          "imagem": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600"
+        },
+        {
+          "nome": "Cratera Ngorongoro",
+          "descricao": "Caldeira vulcânica com a maior concentração de vida selvagem.",
+          "imagem": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600"
+        },
+        {
+          "nome": "Balloon Safari",
+          "descricao": "Vista aérea da savana ao amanhecer em balão.",
+          "imagem": "https://images.unsplash.com/photo-1520116468816-95b69f847357?w=600"
+        }
+      ]
+    },
+    {
+      "titulo": "Teste",
+      "descricaoCurta": "Teste",
+      "descricaoCompleta": "Teste",
+      "imagem": "",
+      "categoria": "América do Sul",
+      "pais": "Teste",
+      "melhorEpoca": "",
+      "preco": 1200,
+      "destaque": false,
+      "tags": [
+        ""
+      ],
+      "atracoes": [],
+      "id": "1qpO-KbXqZA"
+    },
+    {
+      "titulo": "Paris",
+      "descricaoCurta": "A capital francesa é conhecida por sua arquitetura elegante, museus renomados e atmosfera romântica.",
+      "descricaoCompleta": "Paris é uma das cidades mais visitadas do mundo. Abriga monumentos icônicos como a Torre Eiffel, o Arco do Triunfo e o Museu do Louvre. Os visitantes podem explorar bairros históricos, passear às margens do Rio Sena, apreciar a gastronomia francesa e conhecer importantes centros culturais e artísticos.",
+      "imagem": "",
+      "categoria": "Europa",
+      "pais": "França",
+      "melhorEpoca": "Abril a junho",
+      "preco": 8000,
+      "destaque": false,
+      "tags": [
+        ""
+      ],
+      "atracoes": [],
+      "id": "Bv4DIRhhYXw"
+    },
+    {
+      "titulo": "Tóquio",
+      "descricaoCurta": "Uma metrópole vibrante que combina tecnologia avançada, tradição japonesa e cultura pop.",
+      "descricaoCompleta": "Tóquio oferece uma experiência única, misturando arranha-céus futuristas, templos centenários e bairros temáticos. Destacam-se o Templo Sensō-ji, o cruzamento de Shibuya e os diversos centros de entretenimento, compras e gastronomia. A cidade é referência mundial em inovação, segurança e eficiência urbana.",
+      "imagem": "",
+      "categoria": "Ásia",
+      "pais": "Japão",
+      "melhorEpoca": "Março a maio",
+      "preco": 12000,
+      "destaque": false,
+      "tags": [
+        ""
+      ],
+      "atracoes": [],
+      "id": "DPLfh_MO8so"
+    },
+    {
+      "titulo": "Nova York",
+      "descricaoCurta": "Uma das cidades mais influentes do mundo, famosa por sua diversidade cultural e seus arranha-céus.",
+      "descricaoCompleta": "Nova York reúne atrações mundialmente conhecidas como a Estátua da Liberdade, o Central Park e a Times Square. A cidade possui intensa vida cultural, grandes museus, espetáculos da Broadway, gastronomia multicultural e uma atmosfera urbana única.",
+      "imagem": "",
+      "categoria": "América do Norte",
+      "pais": "Estados Unidos",
+      "melhorEpoca": "Abril a Junho",
+      "preco": 9000,
+      "destaque": false,
+      "tags": [
+        ""
+      ],
+      "atracoes": [],
+      "id": "92w86N_dkb8"
+    },
+    {
+      "titulo": "Cairo",
+      "descricaoCurta": "Porta de entrada para a história do Egito Antigo e para as famosas pirâmides.",
+      "descricaoCompleta": "Cairo é uma cidade marcada pela rica herança histórica. Próximo à cidade estão as impressionantes Pirâmides de Gizé e a Grande Esfinge de Gizé. Além dos sítios arqueológicos, os visitantes podem explorar mercados tradicionais, museus e a cultura árabe contemporânea.",
+      "imagem": "",
+      "categoria": "África",
+      "pais": "Egito",
+      "melhorEpoca": "Outubro a Abril",
+      "preco": 8000,
+      "destaque": false,
+      "tags": [
+        ""
+      ],
+      "atracoes": [],
+      "id": "458Wj8Afb1k"
+    },
+    {
+      "titulo": "Sydney",
+      "descricaoCurta": "Uma cidade costeira moderna, famosa por suas praias e por sua icônica casa de ópera.",
+      "descricaoCompleta": "Sydney é um dos principais destinos da Oceania. Entre suas atrações estão a Sydney Opera House, a Sydney Harbour Bridge e a Bondi Beach. A cidade combina natureza, praias, vida urbana sofisticada e excelente infraestrutura turística.",
+      "imagem": "",
+      "categoria": "Oceania",
+      "pais": "Austrália",
+      "melhorEpoca": "Setembro a novembro",
+      "preco": 15000,
+      "destaque": false,
+      "tags": [
+        ""
+      ],
+      "atracoes": [],
+      "id": "jfIvCPGcsZc"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "América do Sul",
+      "descricao": "Destinos vibrantes entre florestas, montanhas e cultura rica.",
+      "icone": "🌎"
+    },
+    {
+      "id": "2",
+      "nome": "Europa",
+      "descricao": "História, arte e gastronomia em cidades milenares.",
+      "icone": "🏰"
+    },
+    {
+      "id": "3",
+      "nome": "Ásia",
+      "descricao": "Mistura fascinante de tradição milenar e modernidade.",
+      "icone": "🏯"
+    },
+    {
+      "id": "4",
+      "nome": "África",
+      "descricao": "Natureza selvagem e culturas ancestrais únicas.",
+      "icone": "🦁"
+    },
+    {
+      "id": "5",
+      "nome": "Oceania",
+      "descricao": "Ilhas paradisíacas e ecossistemas únicos.",
+      "icone": "🐠"
+    },
+    {
+      "id": "6",
+      "nome": "Oriente Médio",
+      "descricao": "Maravilhas arqueológicas e paisagens de deserto.",
+      "icone": "🏜️"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": "1",
+      "destinoId": 1,
+      "usuario": "Ana Lima",
+      "nota": 5,
+      "comentario": "Experiência inesquecível! A trilha e as ruínas são impressionantes."
+    },
+    {
+      "id": "2",
+      "destinoId": 1,
+      "usuario": "Carlos Mota",
+      "nota": 5,
+      "comentario": "Patrimônio vivo da humanidade. Vale cada centavo da viagem."
+    },
+    {
+      "id": "3",
+      "destinoId": 2,
+      "usuario": "Beatriz Souza",
+      "nota": 5,
+      "comentario": "O pôr do sol em Oia é de tirar o fôlego. Lugar mágico!"
+    },
+    {
+      "id": "4",
+      "destinoId": 3,
+      "usuario": "Lucas Ferreira",
+      "nota": 5,
+      "comentario": "Kyoto na época das cerejeiras é um sonho realizado."
+    },
+    {
+      "id": "5",
+      "destinoId": 8,
+      "usuario": "Fernanda Costa",
+      "nota": 5,
+      "comentario": "Petra é surreal. Parece que entramos em outro mundo."
+    },
+    {
+      "id": "6",
+      "destinoId": 11,
+      "usuario": "Rafael Mendes",
+      "nota": 4,
+      "comentario": "Rio é incrível, mas planeje bem os passeios!"
+    }
+  ],
+  "favoritos": [
+    {
+      "id": "1",
+      "destinoId": 1
+    },
+    {
+      "id": "2",
+      "destinoId": 3
+    },
+    {
+      "id": "3",
+      "destinoId": 8
+    },
+    {
+      "id": "4",
+      "destinoId": 11
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "login": "admin",
+      "senha": "123",
+      "email": "admin@email.com",
+      "admin": true
+    },
+    {
+      "id": "2",
+      "nome": "Usuário",
+      "login": "user",
+      "senha": "123",
+      "email": "user@email.com",
+      "admin": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

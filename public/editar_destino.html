@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar Destino — Destinos Mundo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <script>
+    const usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+    if (!usuarioLogado || !usuarioLogado.admin) {
+      alert("Acesso restrito a administradores.");
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">🌍 Destinos Mundo</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#todos-destinos">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="cadastro_destino.html">Cadastrar</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#sobre-aluno">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="visualizacao.html">Visualização</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <a href="index.html" class="btn btn-secondary btn-sm mb-3">← Voltar</a>
+        <h2 class="mb-4">Editar Destino</h2>
+        <div id="alerta-sucesso" class="alert alert-success d-none" role="alert">
+          Destino cadastrado com sucesso!
+          <a href="index.html" class="alert-link ms-2">Ver na listagem</a>
+        </div>
+        <div id="alerta-erro" class="alert alert-danger d-none" role="alert">
+          Erro ao cadastrar. Verifique se o JSON Server está rodando.
+        </div>
+        <div class="card p-4">
+          <div id="form-destino">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Título *</label>
+              <input type="text" id="titulo" class="form-control" placeholder="Ex: Paris, Tóquio..." required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Descrição Curta *</label>
+              <input type="text" id="descricaoCurta" class="form-control" placeholder="Uma frase resumindo o destino" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Descrição Completa *</label>
+              <textarea id="descricaoCompleta" class="form-control" rows="4" placeholder="Descreva detalhadamente o destino..."></textarea>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">País *</label>
+                <input type="text" id="pais" class="form-control" placeholder="Ex: França" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">Categoria *</label>
+                <select id="categoria" class="form-select">
+                  <option value="">Selecione...</option>
+                  <option value="América do Sul">América do Sul</option>
+                  <option value="América do Norte">América do Norte</option>
+                  <option value="Europa">Europa</option>
+                  <option value="Ásia">Ásia</option>
+                  <option value="África">África</option>
+                  <option value="Oceania">Oceania</option>
+                  <option value="Oriente Médio">Oriente Médio</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">Melhor Época</label>
+                <input type="text" id="melhorEpoca" class="form-control" placeholder="Ex: Junho a Setembro" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">Preço estimado (R$)</label>
+                <input type="number" id="preco" class="form-control" placeholder="Ex: 1200" min="0" />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">URL da Imagem</label>
+              <input type="text" id="imagem" class="form-control" placeholder="https://... ou assets/img/..." />
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Tags</label>
+              <input type="text" id="tags" class="form-control" placeholder="Separe por vírgula: praia, cultura, aventura" />
+              <div class="form-text">Separe as tags por vírgula.</div>
+            </div>
+            <div class="mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="destaque" />
+                <label class="form-check-label" for="destaque">Marcar como destaque</label>
+              </div>
+            </div>
+            <button id="btn-atualizar" class="btn btn-primary w-100">
+  Salvar Alterações
+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>2026 © Destinos Mundo</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/editar.js"></script>
+</body>
+</html>

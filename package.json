@@ -1,0 +1,16 @@
+{
+  "name": "destinos-mundo",
+  "version": "1.0.0",
+  "description": "Trabalho Prático 2 - Destinos Mundo",
+  "scripts": {
+    "server": "json-server --watch db/db.json --port 3001",
+    "client": "http-server public -p 5500",
+    "start": "json-server --watch db/db.json --port 3001"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

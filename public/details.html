@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes — Destinos Mundo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Destinos Mundo</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#todos-destinos">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro_destino.html">Cadastrar</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#sobre-aluno">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="visualizacao.html">Visualização</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container mt-4" id="conteudo-detalhe">
+    <div id="loading" class="text-center py-5">
+      <div class="spinner-border text-dark" role="status"></div>
+      <p class="mt-2 text-muted">Carregando destino...</p>
+    </div>
+    <div id="erro" class="alert alert-danger d-none" role="alert"></div>
+    <div id="detalhe-conteudo" class="d-none">
+      <section class="mb-5">
+        <a href="index.html" class="btn btn-secondary btn-sm mb-3">← Voltar</a>
+        <h2 id="detalhe-titulo" class="mb-3"></h2>
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <img
+              id="detalhe-img"
+              src=""
+              alt=""
+              class="img-fluid rounded"
+              onerror="this.src='https://via.placeholder.com/600x400?text=Imagem+Indisponível'"
+            />
+          </div>
+          <div class="col-md-7">
+            <div class="tabela-info">
+              <p><strong>Categoria:</strong> <span id="detalhe-categoria"></span></p>
+              <p><strong>País:</strong> <span id="detalhe-pais"></span></p>
+              <p><strong>Melhor época:</strong> <span id="detalhe-epoca"></span></p>
+              <p><strong>Avaliação:</strong> <span id="detalhe-avaliacao"></span></p>
+              <p><strong>Preço estimado:</strong> <span id="detalhe-preco"></span></p>
+              <hr />
+              <p id="detalhe-descricao" class="text-muted"></p>
+              <div id="detalhe-tags" class="mt-2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a id="btn-editar" class="btn btn-warning d-none">
+  Editar
+</a>
+
+<button id="btn-excluir" class="btn btn-danger d-none">
+  Excluir
+</button>
+
+<button id="btn-favorito" class="btn btn-outline-danger">
+  ♡ Favoritar
+</button>
+      <section class="mb-5">
+        <h3 class="mb-3">Atrações do Destino</h3>
+        <hr />
+        <div class="row" id="grid-atracoes">
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>2026 © Destinos Mundo</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/details.js"></script>
+</body>
+</html>
